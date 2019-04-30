@@ -29,7 +29,7 @@ pipeline {
         }
         stage('terraform apply') {
             steps {
-                sh 'sudo /home/ec2-user/terraform apply -auto-aprove /home/ec2-user'
+                sh 'sudo /home/ec2-user/terraform apply -auto-approve /home/ec2-user'
             }
         }
         stage('terraform ended') {
