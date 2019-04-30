@@ -10,7 +10,7 @@ resource "aws_instance" "ec2-terraform" {
   instance_type = "t2.micro"
   security_groups = [ "launch-wizard-1" ]
 tags {
-    Name = "Instance of EC2 Created by Terraform"
+    Name = "Test Instance of EC2 Created by Terraform"
   }
 
 user_data = <<-EOF
