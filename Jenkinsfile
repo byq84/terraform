@@ -24,7 +24,7 @@ pipeline {
         }
         stage('terraform plan') {
             steps {
-                sh 'ls /home/ec2-user; sudo /home/ec2-user/terraform plan /home/ec2-user'
+                sh 'sudo /home/ec2-user/terraform plan /home/ec2-user'
             }
         }
         stage('terraform ended') {
