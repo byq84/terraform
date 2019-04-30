@@ -26,6 +26,11 @@ pipeline {
             steps {
                 sh 'sudo /home/ec2-user/terraform plan /home/ec2-user'
             }
+        
+        stage('terraform deploy') {
+            steps {
+                sh 'sudo /home/ec2-user/terraform deploy /home/ec2-user'
+            }
         }
         stage('terraform ended') {
             steps {
