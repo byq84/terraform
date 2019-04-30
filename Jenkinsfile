@@ -27,12 +27,12 @@ pipeline {
                 sh 'sudo /home/ec2-user/terraform plan /home/ec2-user'
             }
         }
-        stage('terraform deploy') {
+        stage('terraform apply') {
             steps {
-                sh 'sudo /home/ec2-user/terraform deploy /home/ec2-user'
+                sh 'sudo /home/ec2-user/terraform apply /home/ec2-user'
             }
         }
-        stage('terraform ended2') {
+        stage('terraform ended') {
             steps {
                 sh 'echo "Ended....!!"'
             }
