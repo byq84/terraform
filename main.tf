@@ -10,7 +10,7 @@ resource "aws_instance" "ec2-terraform" {
   instance_type = "t2.micro"
   security_groups = [ "launch-wizard-1" ]
 tags {
-    Name = "Test Instance of EC2 Created by Terraform"
+    Name = "Test Instance of EC2 Created by Terraform 2019"
   }
 
 user_data = <<-EOF
@@ -19,7 +19,7 @@ user_data = <<-EOF
             sudo yum install httpd -y
             sudo service httpd start
             sudo chkconfig httpd on
-            echo "My New EC2 Instance Created by Terraform and Jenkins and Parowa 2019" >> /var/www/html/index.html
+            echo "My New EC2 Instance Created by Terraform and Jenkins and Parowa" >> /var/www/html/index.html
             EOF
 
 }
