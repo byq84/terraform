@@ -14,7 +14,7 @@ pipeline {
         }
         stage('git clone') {
             steps {
-                sh 'sudo rm -r /home/ec2-user/terraform-ec2;sudo git clone https://github.com/byq84/terraform-ec2.git'
+                sh 'sudo rm -r /home/ec2-user/terraform-ec2;sudo git clone https://github.com/byq84/terraform-ec2.git /home/ec2-user/terraform-ec2'
             }
         }
         stage('terraform init') {
