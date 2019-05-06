@@ -19,7 +19,7 @@ user_data = <<-EOF
             sudo yum install httpd -y
             sudo service httpd start
             sudo chkconfig httpd on
-            echo "My New EC2 Instance Created by Terraform and Jenkins 2019" >> /var/www/html/index.html
+            echo "My New EC2 Instance Created by Terraform and Jenkins" >> /var/www/html/index.html
             EOF
 
 }
